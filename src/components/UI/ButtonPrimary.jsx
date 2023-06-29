@@ -1,7 +1,7 @@
 import React from "react";
 import "./ButtonPrimary.css";
 function ButtonPrimary(props) {
-  return <button className="btn-primary">Proceed to Checkout</button>;
+  return <button className="btn-primary">{props.children}</button>;
 }
 
 export default ButtonPrimary;
