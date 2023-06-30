@@ -8,7 +8,7 @@ function Navbar(props) {
     <Fragment>
       <div className={classes.navbar}>
         <div className={classes.logo}>
-          <h1 className={classes["logo__title"]}>FoodRide</h1>
+          <h1 className={classes["logo__title"]}>FoodRide.</h1>
         </div>
 
         <ul className={classes.menu}>
