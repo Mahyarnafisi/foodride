@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import classes from "./Navbar.module.css";
-import { BsBag } from "react-icons/bs";
+import NavbarCartButton from "./NavbarCartButton";
+
 import { BiSolidUser } from "react-icons/bi";
 
 function Navbar(props) {
@@ -18,9 +19,7 @@ function Navbar(props) {
         </ul>
 
         <div className={classes.cart}>
-          <button className={classes["cart__btn"]}>
-            <BsBag />
-          </button>
+          <NavbarCartButton />
         </div>
       </div>
     </Fragment>

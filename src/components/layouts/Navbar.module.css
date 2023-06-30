@@ -32,19 +32,6 @@
   min-width: 10rem;
 }
 
-.cart__btn {
-  color: red;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
-  padding: 1rem;
-  font-size: 2.6rem;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
 .menu {
   border-left: 1px solid var(--colorTextFade);
   border-right: 1px solid var(--colorTextFade);
