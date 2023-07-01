@@ -3,7 +3,6 @@
 
 FoodRide is a food app project created with React JS.
 
-[TOC]
 
 ## Available Scripts
 
@@ -13,7 +12,7 @@ All the codes are available right here in the repository
 
 Runs the app in development mode.
 
-** This a personal project and I hope can be used as a guide for everone **
+**This a personal project and I hope can be used as a guide for everyone**
 
 
 
