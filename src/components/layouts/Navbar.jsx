@@ -19,7 +19,7 @@ function Navbar(props) {
         </ul>
 
         <div className={classes.cart}>
-          <NavbarCartButton />
+          <NavbarCartButton onClick={props.cartOpen} />
         </div>
       </div>
     </Fragment>

@@ -14,9 +14,13 @@ function Cart(props) {
     </ul>
   );
 
+  const closeCartHandler = () => {
+    props.cartClose();
+  };
+
   return (
     <div>
-      <div className={classes.overlay}></div>
+      <div className={classes.overlay} onClick={closeCartHandler}></div>
       <div className={classes.cart}>
         {cartItems}
         <div className={classes.total}>
@@ -24,7 +28,9 @@ function Cart(props) {
           <span className={classes.amount}>36.88 $</span>
         </div>
         <div className={classes.action}>
-          <button className={classes["btn-close"]}>Close</button>
+          <button onClick={closeCartHandler} className={classes["btn-close"]}>
+            Close
+          </button>
           <button className={classes["btn-pay"]}>
             Pay <BsCreditCard className={classes["btn-icon"]} />
           </button>
