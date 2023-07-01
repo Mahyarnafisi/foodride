@@ -1,17 +1,17 @@
 .meal-item {
   list-style: none;
-  /* border: 1px solid gray; */
-  /* padding: 2rem; */
   display: flex;
   align-items: stretch;
   justify-content: flex-start;
   flex-direction: column;
-  box-shadow: 0 1rem 1rem #00000025;
+  box-shadow: 0 0rem 1rem #00000010;
+  border: 1px solid var(--colorTextFade);
   overflow: hidden;
   transition: all 0.3s;
+  border-radius: 1.1rem;
 }
 .meal-item:hover {
-  transform: translateY(-4px);
+  box-shadow: 0 0.5rem 1rem #00000025;
 }
 .meal-item:hover .image img {
   transform: scale(1.08);
@@ -54,5 +54,5 @@
 
 .form {
   margin-top: auto;
-  padding: 2rem;
+  padding: 1rem;
 }

@@ -16,7 +16,7 @@ function MealItem(props) {
         <h2 className={classes.price}>{price}</h2>
       </div>
       <div className={classes.form}>
-        <MealItemForm input={{ type: "number ", value: "1", min: "1", step: "1" }} />
+        <MealItemForm />
       </div>
     </li>
   );

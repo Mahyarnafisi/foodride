@@ -7,6 +7,9 @@
   align-items: stretch;
   justify-content: space-between;
   box-shadow: 0 1rem 8rem #00000010;
+  z-index: 12;
+  position: fixed;
+  background-color: white;
 }
 
 .logo {

@@ -1,9 +1,10 @@
 .meals {
   width: 100%;
-  padding: 2rem;
+  margin-top: 7rem;
 }
 .title {
   font-size: 4.2rem;
   font-weight: 100;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
+  padding: 2rem;
 }
