@@ -1,0 +1,33 @@
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1rem;
+}
+.number {
+  width: 5rem;
+  height: 4rem;
+  border: none;
+  /* border-bottom: 2px solid var(--colorBrandPrimary); */
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 400;
+  outline: none;
+}
+.icon {
+  font-size: 3rem;
+  color: var(--colorBrandPrimary);
+}
+
+.button {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.buttonIcon {
+  font-size: 2.1rem;
+}
