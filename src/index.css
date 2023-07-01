@@ -7,7 +7,7 @@
 }
 
 html {
-  font-size: clamp(7px, 1.5vw, 10px);
+  font-size: clamp(7px, 1.3vw, 10px);
   font-family: "Manrope", sans-serif;
 }
 

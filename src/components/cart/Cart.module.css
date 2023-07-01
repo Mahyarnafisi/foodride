@@ -14,9 +14,9 @@
   z-index: 10;
   /* padding: 2rem; */
   background-color: white;
-  width: 80vw;
+  width: 90vw;
   max-width: 80rem;
-  min-width: 60rem;
+  min-width: 40rem;
   position: fixed;
   top: 50%;
   left: 50%;
