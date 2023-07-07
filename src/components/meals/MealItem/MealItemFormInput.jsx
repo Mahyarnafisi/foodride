@@ -9,6 +9,7 @@ function MealItemFormInput(props) {
       <button className={classes.button}>
         <BsDashLg className={classes.icon} />
       </button>
+
       <input className={classes.number} {...props.input} />
 
       <button className={classes.button}>
