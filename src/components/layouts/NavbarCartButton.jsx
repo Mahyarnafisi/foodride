@@ -5,8 +5,9 @@ import { BsBag } from "react-icons/bs";
 
 function NavbarCartButton(props) {
   const CartCtx = useContext(CartContext);
-  const cartItemNum = CartCtx.items.length;
-  console.log(cartItemNum);
+  const cartItemNum = CartCtx.items.reduce((currentNum, item) => {
+    return currentNum + item.amount;
+  }, 0);
 
   return (
     <button className={classes["cart__btn"]} onClick={props.onClick}>

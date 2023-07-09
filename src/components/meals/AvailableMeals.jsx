@@ -32,7 +32,7 @@ const mealsData = [
 
 function AvailableMeals(props) {
   const MealList = mealsData.map((meal) => (
-    <MealItem key={meal.id} name={meal.name} description={meal.description} price={meal.price} image={meal.image}>
+    <MealItem key={meal.id} id={meal.id} name={meal.name} description={meal.description} price={meal.price} image={meal.image}>
       {meal.name}
     </MealItem>
   ));
