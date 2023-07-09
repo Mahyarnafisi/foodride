@@ -1,17 +1,17 @@
 import React, { useContext } from "react";
+import CartContext from "../../store/Card-context";
 import classes from "./NavbarCartButton.module.css";
 import { BsBag } from "react-icons/bs";
-import CartContext from "../store/cartContext";
+
 function NavbarCartButton(props) {
-  const cartCtx = useContext(CartContext);
-  const numItemCart = cartCtx.items.reduce((accumulator, currentValue) => {
-    return accumulator + currentValue.amount;
-  }, 0);
+  const CartCtx = useContext(CartContext);
+  const cartItemNum = CartCtx.items.length;
+  console.log(cartItemNum);
 
   return (
     <button className={classes["cart__btn"]} onClick={props.onClick}>
       <BsBag />
-      <span>{cartCtx.items}</span>
+      <span>{cartItemNum}</span>
     </button>
   );
 }

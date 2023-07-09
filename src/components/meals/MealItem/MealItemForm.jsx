@@ -7,6 +7,7 @@ function MealItemForm(props) {
   return (
     <form className={classes.form}>
       <MealItemFormInput input={{ value: "1", min: "1", step: "1" }} />
+
       <ButtonPrimary className="button" type="submit">
         Add to cart
       </ButtonPrimary>

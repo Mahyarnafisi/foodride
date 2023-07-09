@@ -3,8 +3,7 @@ import React, { useState } from "react";
 import Navbar from "./components/layouts/Navbar";
 import Meals from "./components/meals/Meals";
 import Cart from "./components/cart/Cart";
-import CartProvider from "./components/store/cartProvider";
-
+import CartProvider from "./store/CartProvider";
 function App() {
   const [cartVisible, setCartVisible] = useState(false);
   const cartCloseHandler = () => {
@@ -20,12 +19,14 @@ function App() {
   };
 
   return (
-    <CartProvider className="app">
-      <Navbar cartOpen={cartShowHandler} />
-      <main>
-        {cartVisible && <Cart cartClose={cartCloseHandler} />}
-        <Meals />
-      </main>
+    <CartProvider>
+      <div className="app">
+        <Navbar cartOpen={cartShowHandler} />
+        <main>
+          {cartVisible && <Cart cartClose={cartCloseHandler} />}
+          <Meals />
+        </main>
+      </div>
     </CartProvider>
   );
 }
