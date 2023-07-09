@@ -6,7 +6,6 @@ import MealItemFormInput from "./MealItemFormInput";
 function MealItemForm(props) {
   const [validAmount, setValidAmount] = useState(true);
   const amountInputRef = useRef();
-  console.log(amountInputRef.current.value);
 
   const onSubmitHandler = (e) => {
     e.preventDefault();
